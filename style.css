@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+body{
+    background: #EFF9F0;
+    font-family: 'open sans', sans-serif;
+    color: #00040B;
+}
+.navBtn:focus{
+    box-shadow: none;
+}
+
+.icon{
+    background: url(./assets/icons/Search.svg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: auto;
+}
+.btnSearch{
+    background-color: #011638;
+}
+.btnSearch:hover{
+    background-color: #01122F;
+}
+.btnSearch:focus{
+    outline: none;
+    box-shadow: none;
+}
+.searchInfo{
+    color: #011638;
+}
+.textContainer span{
+    color: #011638;
+}
+.thead{
+    background-color: #F9C80E;
+}
+.btnCircle{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerNav{
+    font-size: 14px;
+}
+thead{
+    --bs-table-bg: var(	--bs-warning);
+}
+@media(max-width:756px){
+    .inputText::placeholder{
+        font-size: 12px;
+    }
+    .icon{
+        width: 25px;
+
+    }
+    .btnCircle{
+    width: 32px;
+    height: 32px;
+}
+.footerNav{
+    font-size: 10px;
+}
+}

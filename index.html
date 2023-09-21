@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- page navigation -->
+    <nav class="bg-warning navbar navbar-expand-lg">
+      <div class="container">
+        <!-- brand-name / LOGO -->
+        <a href="./index.html" class="navbar-brand py-3">Check My Postcode</a>
+        <!-- toggle btn -->
+        <button
+          class="navbar-toggler navBtn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar menu container -->
+        <section class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto text-dark">
+            <li class="nav-item mx-3">
+              <a href="#" class="nav-link text-dark">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="#" class="nav-link text-dark">Lists</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="#" class="nav-link text-dark">Maps</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="#" class="nav-link text-dark">Nearest Postcodes</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a href="#" class="nav-link text-dark">Lottery</a>
+            </li>
+            <li class="nav-item mx-3 me-0">
+              <a href="#" class="nav-link text-dark">FAQs</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </nav>
+    <main class="container mt-5 mainSection">
+      <!-- Search bar -->
+      <form class="d-flex flex-column text-center mb-5" method="get">
+        <div class="input-group bg-white rounded-start">
+          <div class="icon mx-lg-4"></div>
+          <input
+            type="text"
+            placeholder="Search for a postcode or place name"
+            class="border-0 form-control shadow-none inputText py-2"
+          />
+          <input
+            type="submit"
+            value="Search"
+            class="rounded-end border-0 btnSearch text-light btn px-lg-5"
+          />
+        </div>
+        <small class="searchInfo my-3"
+          >Use your device’s geolocation to find postcodes near you.</small
+        >
+      </form>
+      <!-- book your next stay section -->
+      <section class="d-lg-flex mt-5 align-items-center">
+        <img
+          src="./assets/imgs/Rectangle 5.png"
+          alt="building Image"
+          class="w-100"
+        />
+        <div class="textContainer ms-3">
+          <h5 class="my-2 fw-bold">Book your next stay with Us</h5>
+          <p class="text">
+            Search low prices on hotels, home and so much more with our
+            exclusive deals and discounts! Whether you are planning an
+            adventurous getaway or a business trip, our exclusive deals ensure a
+            memorable and affordable travel experience. Take advantage of our
+            curated exclusive deals and discounts, designed to cater to both
+            your budget and preferences. Whether you're seeking relaxation or
+            productivity, our platform ensures that your journey is not only
+            memorable but also cost-effective.
+            <span class="fw-bold">Book now!</span>
+          </p>
+        </div>
+      </section>
+      <!-- popular postcode section -->
+      <section class="mt-5">
+        <h5>Popular postcodes</h5>
+
+        <!-- carousel container -->
+        <div class="carouselContainer">
+          <!-- carousel item 1 -->
+          <div class="item table-responsive-lg">
+            <table class="tableElement table mb-0">
+              <thead class="thead-dark">
+                <tr class="">
+                  <th class="py-lg-3 px-lg-5">Location</th>
+                  <th class="py-lg-3 px-lg-5">Postcode</th>
+                  <th class="py-lg-3 px-lg-5 text-end">
+                    <i class="bi bi-filter"></i>Filter
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="">
+                <tr class="p-3">
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr class="table-warning">
+                  <td class="py-lg-2 px-lg-5">Birmingham</td>
+                  <td class="py-lg-2 px-lg-5">WA1 2WS</td>
+                  <td class="py-lg-2 px-lg-5"></td>
+                </tr>
+                <tr>
+                  <td class="py-lg-2 px-lg-5">Manchester</td>
+                  <td class="py-lg-2 px-lg-5">QWE FG3G</td>
+                  <td class="py-lg-2 px-lg-5"></td>
+                </tr>
+                <tr class="table-warning">
+                  <td class="py-lg-2 px-lg-5">Leeds</td>
+                  <td class="py-lg-2 px-lg-5">NJ8 I89</td>
+                  <td class="py-lg-2 px-lg-5"></td>
+                </tr>
+                <tr>
+                  <td class="py-lg-2 px-lg-5">Bristol</td>
+                  <td class="py-lg-2 px-lg-5">kLM 7Y6</td>
+                  <td class="py-lg-2 px-lg-5"></td>
+                </tr>
+                <tr class="table-warning">
+                  <td class="py-lg-2 px-lg-5">Cornwall</td>
+                  <td class="py-lg-2 px-lg-5">SDR 7UT</td>
+                  <td class="py-lg-2 px-lg-5"></td>
+                </tr>
+                <tr>
+                  <td class="py-lg-2 px-lg-5">Bristol</td>
+                  <td class="py-lg-2 px-lg-5">KLM 7Y6</td>
+                  <td class="py-lg-2 px-lg-5"></td>
+                </tr>
+              </tbody>
+            </table>
+            <div
+              class="carouselBtnContainer bg-white mt-0 d-flex justify-content-between align-items-center"
+            >
+              <button class="btn btn-light btnCircle btnLeft">
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <p>Page 1 of 3</p>
+              <button class="btn btn-light btnCircle btnRight">
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <!-- carousel item 2 -->
+          <div class="item table-responsive-lg">
+            <table class="tableElement table mb-0">
+              <thead class="thead-dark">
+                <tr class="">
+                  <th class="py-lg-3 px-lg-5">Location</th>
+                  <th class="py-lg-3 px-lg-5">Postcode</th>
+                  <th class="py-lg-3 px-lg-5 text-end">
+                    <i class="bi bi-filter"></i>Filter
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="">
+                <tr class="p-3">
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr class="table-warning">
+                  <td class="py-lg-2 px-lg-5">Birmingham</td>
+                  <td class="py-lg-2 px-lg-5">WA1 2WS</td>
+                  <td class="py-lg-2 px-lg-5"></td>
+                </tr>
+                <tr>
+                  <td class="py-lg-2 px-lg-5">Manchester</td>
+                  <td class="py-lg-2 px-lg-5">QWE FG3G</td>
+                  <td class="py-lg-2 px-lg-5"></td>
+                </tr>
+                <tr class="table-warning">
+                  <td class="py-lg-2 px-lg-5">Leeds</td>
+                  <td class="py-lg-2 px-lg-5">NJ8 I89</td>
+                  <td class="py-lg-2 px-lg-5"></td>
+                </tr>
+                <tr>
+                  <td class="py-lg-2 px-lg-5">Bristol</td>
+                  <td class="py-lg-2 px-lg-5">kLM 7Y6</td>
+                  <td class="py-lg-2 px-lg-5"></td>
+                </tr>
+                <tr class="table-warning">
+                  <td class="py-lg-2 px-lg-5">Cornwall</td>
+                  <td class="py-lg-2 px-lg-5">SDR 7UT</td>
+                  <td class="py-lg-2 px-lg-5"></td>
+                </tr>
+                <tr>
+                  <td class="py-lg-2 px-lg-5">Bristol</td>
+                  <td class="py-lg-2 px-lg-5">KLM 7Y6</td>
+                  <td class="py-lg-2 px-lg-5"></td>
+                </tr>
+              </tbody>
+            </table>
+            <div
+              class="carouselBtnContainer bg-white mt-0 d-flex justify-content-between align-items-center"
+            >
+              <button class="btn btn-light btnCircle btnLeft">
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <p>Page 2 of 3</p>
+              <button class="btn btn-light btnCircle btnRight">
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <!-- carousel item 3 -->
+          <div class="item table-responsive-lg">
+            <table class="tableElement table mb-0">
+              <thead class="thead-dark">
+                <tr class="">
+                  <th class="py-lg-3 px-lg-5">Location</th>
+                  <th class="py-lg-3 px-lg-5">Postcode</th>
+                  <th class="py-lg-3 px-lg-5 text-end">
+                    <i class="bi bi-filter"></i>Filter
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="">
+                <tr class="p-3">
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr class="table-warning">
+                  <td class="py-lg-2 px-lg-5">Birmingham</td>
+                  <td class="py-lg-2 px-lg-5">WA1 2WS</td>
+                  <td class="py-lg-2 px-lg-5"></td>
+                </tr>
+                <tr>
+                  <td class="py-lg-2 px-lg-5">Manchester</td>
+                  <td class="py-lg-2 px-lg-5">QWE FG3G</td>
+                  <td class="py-lg-2 px-lg-5"></td>
+                </tr>
+                <tr class="table-warning">
+                  <td class="py-lg-2 px-lg-5">Leeds</td>
+                  <td class="py-lg-2 px-lg-5">NJ8 I89</td>
+                  <td class="py-lg-2 px-lg-5"></td>
+                </tr>
+                <tr>
+                  <td class="py-lg-2 px-lg-5">Bristol</td>
+                  <td class="py-lg-2 px-lg-5">kLM 7Y6</td>
+                  <td class="py-lg-2 px-lg-5"></td>
+                </tr>
+                <tr class="table-warning">
+                  <td class="py-lg-2 px-lg-5">Cornwall</td>
+                  <td class="py-lg-2 px-lg-5">SDR 7UT</td>
+                  <td class="py-lg-2 px-lg-5"></td>
+                </tr>
+                <tr>
+                  <td class="py-lg-2 px-lg-5">Bristol</td>
+                  <td class="py-lg-2 px-lg-5">KLM 7Y6</td>
+                  <td class="py-lg-2 px-lg-5"></td>
+                </tr>
+              </tbody>
+            </table>
+            <div
+              class="carouselBtnContainer bg-white mt-0 d-flex justify-content-between align-items-center"
+            >
+              <button class="btn btn-light btnCircle btnLeft">
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <p>Page 3 of 3</p>
+              <button class="btn btn-light btnCircle btnRight">
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- extra information section -->
+      <section class="d-lg-flex mt-5 align-items-start">
+        <div class="textContainer ms-3 mt-5">
+          <h5 class="my-2 fw-bold">
+            Use check my postcode to find out key information about your local
+            Postcode
+          </h5>
+          <p class="text">
+            Find out nearest postcode to where you are right now. Read what
+            other people have said about your postcode and leave your own
+            comments for others to read.
+          </p>
+        </div>
+        <img
+          src="./assets/imgs/Rectangle 15.png"
+          alt="building Image"
+          class="w-100"
+        />
+      </section>
+    </main>
+    <!-- site footer -->
+    <footer class="bg-dark mt-5 text-light ">
+      <div class="container py-3">
+        <!-- footer navigation  -->
+        <div class="row justify-content-start align-items-start g-4 px-3 pb-5 footerNav">
+          <!-- first column -->
+          <div class="col-lg-3 col-md-4 col">
+            <h4>Search</h4>
+            <ul class="navbar-nav">
+              <li class="my-0"><a href="#" class="nav-link"> postcodes by county</a></li>
+              <li class="my-0">
+                <a href="#" class="nav-link"> postcodes by introduction date</a>
+              </li>
+              <li class="my-0"><a href="#" class="nav-link"> postcodes near me</a></li>
+              <li class="my-0"><a href="#" class="nav-link"> postcode lottery</a></li>
+            </ul>
+          </div>
+
+          <!-- second column -->
+          <div class="col-lg-3 col-md-4 col">
+            <h4>Maps</h4>
+            <ul class="navbar-nav">
+              <li class="my-0">
+                <a href="#" class="nav-link"> postcode map by user type</a>
+              </li>
+              <li class="my-0">
+                <a href="#" class="nav-link"> postcode map by use category</a>
+              </li>
+              <li class="my-0">
+                <a href="#" class="nav-link">
+                  postcode map by council tax band</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- third column -->
+          <div class="col-lg-3 col-md-4 col">
+            <h4>Legal</h4>
+            <ul class="navbar-nav">
+              <li class="my-0"><a href="#" class="nav-link">privacy policy</a></li>
+              <li class="my-0">
+                <a href="#" class="nav-link"> disclaimer and limitations</a>
+              </li>
+              <li class="my-0"><a href="#" class="nav-link">about this website</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-center mt-5 ">checkmyPostcode.UK is a <span class="text-warning">GoodStuff</span> website</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
