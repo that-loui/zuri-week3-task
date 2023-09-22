@@ -35,6 +35,10 @@ body{
 .thead{
     background-color: #F9C80E;
 }
+/* reset bootstrap table color */
+thead{
+    --bs-table-bg: var(	--bs-warning);
+}
 .btnCircle{
     width: 64px;
     height: 64px;
@@ -47,9 +51,7 @@ body{
 .footerNav{
     font-size: 14px;
 }
-thead{
-    --bs-table-bg: var(	--bs-warning);
-}
+
 @media(max-width:756px){
     .inputText::placeholder{
         font-size: 12px;
