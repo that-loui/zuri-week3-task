@@ -33,8 +33,14 @@ Page should be able to:
 ## My process
 
 - I started out by choosing a design to implement from the folder provided, then after getting a clear of the design i went on to contact the design for additional information on the design. The designer provided me with the figma file link which aided my development.
-- I decided to use bootstrap to build the site after careful consideration of the design specifics. I built out the design section by section starting with the nav and made it with mobile first approach to programming. 
-- A particular section of the design was a carousel which required javascript cause the design was different from bootstrap default carousel. Created multiple functions to reset, start and switch slides 
+
+- I decided to use bootstrap to build the site after careful consideration of the design specifics. I built out the design section by section starting with the nav and made it with mobile first approach to programming. Created the toggle button, then attached it to the nav-menu
+
+- The next section was the search bar section which I built using a simple form, the I moved on to the first hero/ ad section, I used responsive flexBox to ensure that it was displayed row on wider screens and column on smaller screens.
+
+- The next section was the (popular postcode) section which honestly gave the most stress cause it included a carousel which I implemented using vanilla javascript, I created multiple tables inside a container using bootstrap custom table class, I had to change a custom color which i did by changing the custom variable. I the went to implement functionality in js, called them in js using querySelectorAll, created a reset function to set their display = 'none' by looping through and setting the display of each iteration to 'none'. I then created a function to start the slide by setting the display of the first item to block. i then created the two function for changing slides in both directions. After proper testing that it functioned well and the layout was fine in all screen sizes i moved to the next section  
+
+- I then did the extra information section which i made using the same technique as the ad hero section but switched the position of the items. The last section was the footer which I used bootstrap grid to implement. Pushed the code to github and made the implementation live    
 
 
 ## communication summary
